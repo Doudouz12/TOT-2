@@ -23,6 +23,10 @@ Curated technology use cases and video references
 
 A consultant-style executive summary suitable for client presentations
 
+## What’s inside (planning-first)
+- **Architecture**: See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the high-level system diagram, responsibilities, folder layout, and Azure deployment guidance.
+- **Roadmap**: See [`docs/ROADMAP.md`](docs/ROADMAP.md) for the step-by-step build plan (repo hygiene → API skeleton → agents → frontend → hardening → Azure deployment).
+
 Core Capabilities
 1. Digital Readiness Snapshot
 
@@ -81,9 +85,11 @@ Estimated benefits
 Recommended next steps
 
 Technical Architecture
+High-level layout (detailed in `docs/ARCHITECTURE.md`):
+```
 root/
  ├── backend/
- │    ├── server.js            # Express API server
+ │    ├── server.js            # Express API server (to be added)
  │    ├── agents/              # Multi-agent logic (assessment, ROI, etc.)
  │    ├── prompts/             # Prompt templates for agents
  │    ├── controllers/         # API route handlers
@@ -95,8 +101,10 @@ root/
  │    ├── styles.css           # Application styling
  │    └── app.js               # Front-end logic and API calls
  │
+ ├── docs/                     # Architecture & roadmap
  ├── README.md                 # Repository documentation
  └── .env.example              # Environment variable template
+```
 
 Technology Stack
 
